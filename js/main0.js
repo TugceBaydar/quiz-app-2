@@ -12,7 +12,7 @@ var qanda = [
      answer:'288'
   },
   {
-     question: 'Who said "What doesnt kill you makes you stronger?"',
+     question: 'Who said "What doesn\'t kill you makes you stronger?"',
      answer: 'Nietzsche'
   },
   {
@@ -47,7 +47,7 @@ var qanda = [
     var newDiv = document.createElement('div') // for one question template
     var newH1 = document.createElement('h1')
     var newInput = document.createElement('input')
-    newDiv.setAttribute('style', 'margin-bottom: 5px; margin-top: 5px;')
+    newDiv.setAttribute('style', 'margin-bottom: 20px;margin-left: 200px;')
     newInput.setAttribute('style', 'width: 40%;')
     var newDiv2 = document.createElement('div') //for whole questions section
     newDiv2.className = 'col-sm-9'
@@ -108,7 +108,7 @@ var qanda = [
             if(correct >= 5) {
               alert("you passed the quiz !");
             } else {
-              alert("im sorry !!");
+              alert("I'm sorry man !!");
             }
 
       document.getElementById('correct').textContent = correct;
@@ -118,20 +118,18 @@ var qanda = [
 
   // if you cant answer in 5 seconds you ll not be able to pass the next question
 
- var y = document.getElementsByTagName('input')
+ // var y = document.getElementsByTagName('input')
 
- for(var i=1; i<y.length; i++) {
+ // for(var i=1; i<y.length; i++) {
+ //
+ //   y[i].setAttribute('disabled', true)
+ // }
 
-   y[i].setAttribute('disabled', true)
- }
-
-   var counter = 0  // a varibable to count correct questions answered in 8 seconds
-   setInterval(function(){
-   y[counter].removeAttribute('disabled')
-   if(counter>0) {
-   y[counter-1].setAttribute('disabled', true) // to disable the previos question again
- }
-   counter++
- },5000
-
- )
+ //   var counter = 0  // a varibable to count correct questions answered in 8 seconds
+ //   setInterval(function(){
+ //   y[counter].removeAttribute('disabled')
+ //   if(counter>0) {
+ //   y[counter-1].setAttribute('disabled', true) // to disable the previos question again
+ // }
+ //   counter++
+ // },5000)

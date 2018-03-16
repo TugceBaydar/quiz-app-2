@@ -24,8 +24,8 @@ body {
 	position: relative;
 	width: 200px;
   right: 5px;
-  top: 60px;
-  left: 90%;
+  top: 120px;
+  left: 800px;
 }
 
 .correct {
@@ -42,16 +42,27 @@ body {
 } */
 
 button {
-	margin-left: 12%;
+	margin-left: 23%;
 
 }
 
 h1 {
 	text-align: left;
 	font-size: 1.5rem;
+	color: #6f0458;
 }
 
 h1.correct,
 	h1.incorrect {
 		width: 270px;
+		height: 50px;
+	}
+
+hr {
+	    margin-top: 1rem;
+	    margin-bottom: 1rem;
+	    border: 0;
+	    border-top: 2px solid rgb(239, 216, 228);
+			width:30%;
+			box-shadow: 12px 11px 8px black;
 	}
