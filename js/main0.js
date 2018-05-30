@@ -108,7 +108,7 @@ var qanda = [
             if(correct >= 5) {
               alert("you passed the quiz !");
             } else {
-              alert("I'm sorry man !!");
+              alert("I'm sorry you could not pass the quiz !!");
             }
 
       document.getElementById('correct').textContent = correct;
